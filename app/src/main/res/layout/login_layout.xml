@@ -4,16 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/purple"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/arrow"
-        android:layout_gravity="center"/>
-    <EditText
+        android:layout_gravity="center"
+        android:src="@drawable/arrow" />
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        app:endIconMode="clear_text"
+        app:startIconContentDescription="Icone do Usuário"
+        app:startIconDrawable="@drawable/baseline_person">
 
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:hint="User Name"
+            android:inputType="textPersonName" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        app:endIconMode="clear_text"
+        app:startIconContentDescription="Icone do Usuário"
+        app:startIconDrawable="@drawable/baseline_person">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Passoword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:hint="Passoword"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#f2960c"
+                android:text="Sign In" />
+        </LinearLayout>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>
