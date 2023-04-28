@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/purple"
+    android:background="@drawable/blue"
     android:orientation="vertical"
 
     tools:context=".MainActivity">
@@ -26,8 +26,8 @@
         android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero." />
 
     <ImageView
-        android:layout_width="40dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
 
