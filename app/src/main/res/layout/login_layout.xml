@@ -16,11 +16,11 @@
         android:src="@drawable/arrow" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/white"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColorHint="@color/white"
         app:endIconMode="clear_text"
         app:startIconContentDescription="Icone do Usuário"
         app:startIconDrawable="@drawable/baseline_person">
@@ -28,10 +28,10 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Email"
-            android:background="@drawable/redondo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20sp"
+            android:background="@drawable/redondo"
             android:hint="User Name"
             android:inputType="textPersonName" />
 
@@ -48,24 +48,36 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Password"
-            android:background="@drawable/redondo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20sp"
+            android:background="@drawable/redondo"
             android:hint="Password"
             android:inputType="textPassword" />
-
-        <Button
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:text="Remember my password" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+
+                android:text="Remember my password"
+                android:textColor="@color/white"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
 
             <Button
                 android:layout_width="wrap_content"
@@ -85,6 +97,25 @@
                 android:text="Forget Password?" />
         </LinearLayout>
 
-
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="80dp"
+        android:gravity="left"
+        android:text="Do not have a account?"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="80dp"
+        android:gravity="left"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 </LinearLayout>
