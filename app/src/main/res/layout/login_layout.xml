@@ -23,17 +23,18 @@
         android:textColorHint="@color/white"
         app:endIconMode="clear_text"
         app:startIconContentDescription="Icone do Usuário"
-        app:startIconDrawable="@drawable/baseline_person">
+        >
 
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20sp"
+            android:layout_marginHorizontal="20dp"
             android:background="@drawable/redondo"
             android:hint="User Name"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:drawableRight="@drawable/baseline_person"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -43,7 +44,7 @@
         android:textColorHint="@color/white"
         app:endIconMode="clear_text"
         app:startIconContentDescription="Icone da senha"
-        app:startIconDrawable="@drawable/baseline_key">
+        >
 
 
         <com.google.android.material.textfield.TextInputEditText
@@ -53,7 +54,8 @@
             android:layout_marginHorizontal="20sp"
             android:background="@drawable/redondo"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/baseline_key"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,6 +97,8 @@
                 android:layout_gravity="left"
                 android:layout_marginLeft="110dp"
                 android:text="Forget Password?" />
+
+
         </LinearLayout>
 
     </com.google.android.material.textfield.TextInputLayout>
